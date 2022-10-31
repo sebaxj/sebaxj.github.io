@@ -1,0 +1,52 @@
+.terminal-container {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  cursor: text;
+  background-color: #282828;
+}
+
+.terminal-content {
+  padding: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  color: #ebdbb2;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-banner {
+  color: #ebdbb2;
+  text-shadow: 0 0 5px #ebdbb2;
+  line-height: normal;
+  font-weight: bold;
+  font-size: calc(1vw + 7px);
+  margin-bottom: 20px;
+}
+
+.terminal-welcome-message {
+  margin-bottom: 20px;
+}
+
+input {
+  border: none;
+  outline: none;
+  color: #ebdbb2;
+  font-family: inherit;
+  font-size: inherit;
+  font-size: inherit;
+  background-color: #282828;
+  caret-color: #ebdbb2;
+}
+
+.terminal-input-area {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+}
+
+.terminal-prompt {
+  margin-right: 5px;
+}
