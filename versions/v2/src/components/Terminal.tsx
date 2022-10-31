@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Banner from './Banner';
 import WelcomeMessage from './WelcomeMessage';
 import CommandInput from './CommandInput';
@@ -11,6 +11,7 @@ type TerminalProps = {
 
 const Terminal = (props: TerminalProps) => {
   const { terminalPrompt, banner, welcomeMessage } = props;
+  const [output, setOutput] = useState<string[]>([]);
 
   return (
     <div className="terminal-container">

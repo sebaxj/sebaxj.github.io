@@ -1,11 +1,10 @@
-import React, { MutableRefObject, useRef, useState } from 'react';
+import React, { useState } from 'react';
 
 type CommandInputProps = {
   terminalPrompt?: string;
 };
 
 const CommandInput = (props: CommandInputProps) => {
-  const { terminalPrompt } = props;
   const [command, setCommand] = useState('');
 
   const handleCommandChange = (input: React.ChangeEvent<HTMLInputElement>): void => {
@@ -22,7 +21,7 @@ const CommandInput = (props: CommandInputProps) => {
 
   return (
     <div className="terminal-input-area">
-      <span className="terminal-prompt">{terminalPrompt}</span>
+      <span className="terminal-prompt">{props.terminalPrompt}</span>
       <form>
         <input
           type="text"
