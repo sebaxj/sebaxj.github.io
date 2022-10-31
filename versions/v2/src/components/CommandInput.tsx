@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 type CommandInputProps = {
-  terminalPrompt?: string;
+  terminalPrompt: string;
+  processInput: (input: string) => void;
 };
 
 const CommandInput = (props: CommandInputProps) => {
@@ -14,6 +15,7 @@ const CommandInput = (props: CommandInputProps) => {
   const handleInputKeyDown = (input: React.KeyboardEvent<HTMLInputElement>): void => {
     switch (input.key) {
       case 'Enter':
+        props.processInput(command);
         setCommand('');
         break;
     }
