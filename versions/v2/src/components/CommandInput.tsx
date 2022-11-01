@@ -24,16 +24,15 @@ const CommandInput = (props: CommandInputProps) => {
   return (
     <div className="terminal-input-area">
       <span className="terminal-prompt">{props.terminalPrompt}</span>
-      <form>
-        <input
-          type="text"
-          autoCapitalize="off"
-          autoComplete="off"
-          value={command}
-          onChange={handleCommandChange}
-          onKeyDown={handleInputKeyDown}
-        />
-      </form>
+      <input
+        type="text"
+        autoCapitalize="off"
+        autoComplete="off"
+        autoCorrect="off"
+        value={command}
+        onChange={handleCommandChange}
+        onKeyDown={handleInputKeyDown}
+      />
     </div>
   );
 };

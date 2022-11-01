@@ -1,6 +1,5 @@
 /**
  * ESLINT configuration for React Typscript
- */
 module.exports = {
   extends: [
     'plugin:react/recommended',
@@ -47,5 +46,35 @@ module.exports = {
         allowNumber: false,
       },
     ],
+  },
+};
+ */
+module.exports = {
+  extends: ['plugin:jsx-a11y/recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'prettier'],
+  // parser: '@typescript-eslint/parser',
+  // parserOptions: {
+  //   ecmaVersion: 2020,
+  //   sourceType: 'module',
+  //   ecmaFeatures: {
+  //     jsx: true, // Allows for the parsing of JSX
+  //   },
+  // },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+  // plugins: ['@typescript-eslint'],
+  rules: {
+    // TODO: add more rules?
+    // 0 = 'off', 1 = 'warn', 2 = 'error'
+    'no-console': 1,
+    'no-unreachable': 2,
+    'no-unreachable-loop': 2,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/prop-types': 'off',
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
 };

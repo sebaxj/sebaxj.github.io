@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import Banner from './Banner';
 import WelcomeMessage from './WelcomeMessage';
 import CommandInput from './CommandInput';
@@ -13,6 +13,11 @@ type TerminalProps = {
 const Terminal = (props: TerminalProps) => {
   const { terminalPrompt, banner, welcomeMessage } = props;
   const [output, setOutput] = useState<string[]>([]);
+
+  // function to add glow to a string
+  const glow = (text: string) => {
+    return <span className="terminal-glow">{text}</span>;
+  };
 
   const processInput = (input: string) => {
     switch (input) {
