@@ -4,7 +4,7 @@
   "description": "Personal Website made by Sebastian James.",
   "main": "src/index.tsx",
   "scripts": {
-    "start": "webpack serve --config webpack.config.js --env env=development",
+    "dev": "webpack serve --config webpack.config.js --env env=development",
     "build": "webpack --config webpack.config.js --env env=production",
     "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx,json}\"",
     "lint:fix": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",

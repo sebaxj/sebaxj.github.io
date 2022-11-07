@@ -6,7 +6,7 @@ const getYear = () => {
   return new Date().getFullYear();
 };
 
-const welcomeMessage = `Friends, bots, potential employers, welcome to my website!
+const welcomeMessage = `Computer scientist, Stanford alumnus, musician, software engineer.
 
 Type 'help' to view a list of available commands.
 `;

@@ -1,12 +1,16 @@
 type TerminalOutputProps = {
-  output: string[];
+  output: (string | JSX.Element)[];
 };
 
 const TerminalOutput = (props: TerminalOutputProps) => {
+  /*
+   TODO: why doesn' this display the output?
   const outputList = props.output.map((output, index) => {
-    <div className="terminal-command-output">{output}</div>;
+    <div key={index}>{output}</div>;
   });
-  return <>{outputList}</>;
+  */
+
+  return <div>{props.output}</div>;
 };
 
 export default TerminalOutput;
