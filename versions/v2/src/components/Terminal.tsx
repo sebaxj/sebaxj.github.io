@@ -94,6 +94,8 @@ const Terminal = (props: TerminalProps) => {
           <div className="languages-value">[####-]</div>
           <div className="languages-property">{glow('Spring Boot:')}</div>
           <div className="languages-value">[###--]</div>
+          <div className="languages-property">{glow('Docker')}</div>
+          <div className="languages-value">[###--]</div>
           <div className="languages-property">{glow('Unix:')}</div>
           <div className="languages-value">[#####]</div>
           <div className="languages-property">{glow('Git:')}</div>
@@ -105,6 +107,13 @@ const Terminal = (props: TerminalProps) => {
     ),
     portfolio: (
       <div className="terminal-link">
+        <a href="https://github.com/sebaxj/baremetal-raspberrypi-doc" target="_blank" rel="noopener noreferrer">
+          {glow('Baremetal Raspberry Pi Operating System')}
+        </a>
+        <p>
+          Baremetal operating system with a functional shell, graphics library, and audio driver. Implemented in{' '}
+          {glow('C')} and {glow('Assembly')}.
+        </p>
         <a href="https://github.com/sebaxj/project-031421" target="_blank" rel="noopener noreferrer">
           {glow('Electrocardiogram Sonification')}
         </a>
@@ -112,6 +121,69 @@ const Terminal = (props: TerminalProps) => {
           Probability-based algorithm for sonification of electrocardiogram data. Implemented in {glow('Python')} and{' '}
           {glow('C++')}.
         </p>
+        <a href="https://github.com/sebaxj/Jumper" target="_blank" rel="noopener noreferrer">
+          {glow('Jumper')}
+        </a>
+        <p>
+          A hybrid "Flappy Bird" and "Jetpack Joyride" game implmented using a capacitive touch sensor integrated on a
+          8x8 LED array. The game is controlled using an {glow('Arduino')}.
+        </p>
+        <a href="https://ccrma.stanford.edu/~sebaxj/256a/final/index.html" target="_blank" rel="noopener noreferrer">
+          {glow('Musical Operation')}
+        </a>
+        <p>
+          Desktop audio-visual game implemented in {glow('Unity')} and {glow('ChucK')}.
+        </p>
+        <a href="https://ccrma.stanford.edu/~sebaxj/220b/final/index.html" target="_blank" rel="noopener noreferrer">
+          {glow('Do what you Love, Love what you Do')}
+        </a>
+        <p>
+          Audio-visual granular-synthesis instrument implemented in {glow('C++')} and {glow('ChucK')}.
+        </p>
+        <a href="https://ccrma.stanford.edu/~sebaxj/256a/hw2/index.html" target="_blank" rel="noopener noreferrer">
+          {glow('Galactic Sistine Chapel')}
+        </a>
+        <p>
+          Audio visualizer using FFT implemented in {glow('Unity')} and {glow('ChucK')}.
+        </p>
+        <a href="https://ccrma.stanford.edu/~sebaxj/256a/hw3/index.html" target="_blank" rel="noopener noreferrer">
+          {glow('ECG Sequencer')}
+        </a>
+        <p>
+          Audio sequencer implemented in {glow('Unity')} and {glow('ChucK')}.
+        </p>
+        <a
+          href="https://ccrma.stanford.edu/~sebaxj/assets/turn_taking_duet_paper.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {glow(
+            'Does performance monitoring differ between scored and improvised musical actions?: A turn-taking piano-duet EEG study',
+          )}
+        </a>
+        <p>Paper on the role of partner-monitoring as a function of score-reading and improvisation on a keyboard.</p>
+        <a
+          href="https://ccrma.stanford.edu/~sebaxj/assets/music451a-final-report.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {glow('Gender Priming Pitch Height and Instrument Timbre Perception: Differentiating the N400 ERP Component')}
+        </a>
+        <p>EEG study conducted in the Neuromusic Lab at the Center for Computer Research in Music and Acoustics.</p>
+        <a
+          href="https://ccrma.stanford.edu/~sebaxj/assets/music451c-final-report.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {glow(
+            'Alpha Power as a Constituent of Agency and Creativity: Looking at a Pilot Piano Turn-Taking Improvisation Duet',
+          )}
+        </a>
+        <p>EEG study conducted in the Neuromusic Lab at the Center for Computer Research in Music and Acoustics.</p>
+        <a href="https://ccrma.stanford.edu/~sebaxj/assets/RBA1.pdf" target="_blank" rel="noopener noreferrer">
+          {glow('The Rebellion of Music in Medicine: Using Music Therapy to replace Opioids')}
+        </a>
+        <p>Paper on the use of music therapy as an alternative to opiods for pain management.</p>
       </div>
     ),
     cv: (
@@ -122,10 +194,17 @@ const Terminal = (props: TerminalProps) => {
       </div>
     ),
     website: (
-      <div>
+      <div className="terminal-link">
         <p>
           This website was made using {glow('Typescript')}, {glow('React')}, and vanilla {glow('CSS')}.
         </p>
+        <a
+          href="https://github.com/sebaxj/sebaxj.github.io/tree/main/versions/v2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on {glow('GitHub')}
+        </a>
         <p>Inspiration borrowed from Craig Feldman.</p>
       </div>
     ),
