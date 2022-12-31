@@ -49,6 +49,8 @@ const Terminal = (props: TerminalProps) => {
           <dd>well, you clearly know what this does already...</dd>
           <dt>{glow('about')}</dt>
           <dd>education, who I am, where I am, what I've done, and what I do now.</dd>
+          <dt>{glow('cv')}</dt>
+          <dd>view my CV.</dd>
           <dt>{glow('portfolio')}</dt>
           <dd>information and links to my projects.</dd>
           <dt>{glow('website')}</dt>
@@ -188,7 +190,7 @@ const Terminal = (props: TerminalProps) => {
     ),
     cv: (
       <div className="terminal-link">
-        <a href="https://ccrma.stanford.edu/~sebaxj/assets/CV.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="https://ccrma.stanford.edu/~sebaxj/assets/Resume.pdf" target="_blank" rel="noopener noreferrer">
           View my {glow('CV')} here!
         </a>
       </div>
