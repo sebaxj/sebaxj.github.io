@@ -109,6 +109,17 @@ const Terminal = (props: TerminalProps) => {
     ),
     portfolio: (
       <div className="terminal-link">
+        <a
+          href="https://hci.stanford.edu/courses/cs147/2022/wi/projects/BecomingIron-Man/Wavelength/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {glow('Wavelength')}
+        </a>
+        <p>
+          Designed, prototyped, and engineered a social media application built around sharing musing preferences.
+          Implemented in {glow('React Native')} and {glow('Spotify API')}.
+        </p>
         <a href="https://github.com/sebaxj/baremetal-raspberrypi-doc" target="_blank" rel="noopener noreferrer">
           {glow('Baremetal Raspberry Pi Operating System')}
         </a>
