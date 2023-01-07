@@ -118,7 +118,12 @@ const Terminal = (props: TerminalProps) => {
         </a>
         <p>
           Designed, prototyped, and engineered a social media application built around sharing musing preferences.
-          Implemented in {glow('React Native')} and {glow('Spotify API')}.
+          Implemented in {glow('React Native')} and {glow('Spotify API')}. <br />
+          View code{' '}
+          <a href="https://github.com/sebaxj/Wavelength" target="_blank" rel="noopener noreferrer">
+            {glow('here')}
+          </a>
+          .
         </p>
         <a href="https://github.com/sebaxj/baremetal-raspberrypi-doc" target="_blank" rel="noopener noreferrer">
           {glow('Baremetal Raspberry Pi Operating System')}
